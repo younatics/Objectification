@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         let datas = [data1, data2, data3] as [Any]
         
         let objectification = Objectification(objects: datas, type: .all)
-        _ = objectification.objects(contain: "Awesome")
+        print(objectification.objects(contain: "Awesome"))
     }
 
     override func didReceiveMemoryWarning() {

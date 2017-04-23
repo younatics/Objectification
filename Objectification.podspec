@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'Objectification'
   s.version          = '0.1.0'
-  s.summary          = 'Get all your object when string is contained!'
+  s.summary          = 'Return objects where string is contained in object!'
 
   s.description      = <<-DESC
                         Magic will be happened when you use Objectification!
