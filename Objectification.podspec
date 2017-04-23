@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Objectification'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'Return objects where string is contained in object!'
 
   s.description      = <<-DESC
