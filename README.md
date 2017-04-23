@@ -14,7 +14,7 @@
 See [CHANGELOG](https://github.com/younatics/Objectification/blob/master/CHANGELOG.md) for details
 
 ## Intoduction
-🔨 Return objects where string is contained in object!
+🔨 Return objects where string is contained in object! This library will be useful when you develop search function :)
 
 ## Requirements
 
