@@ -48,7 +48,7 @@ let data2 = YNSearch()
 let data3 = YNExpandableCell()
         
 let datas = [data1, data2, data3] as [Any]
-        
+// Three types you can use (.properties, .values, .all) you can see `Stringfication` for more information
 let objectification = Objectification(objects: datas, type: .all)
 ```
 
