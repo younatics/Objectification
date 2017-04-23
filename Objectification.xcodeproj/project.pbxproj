@@ -13,6 +13,7 @@
 		19DFDA1B1EACE08600041BE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19DFDA191EACE08600041BE0 /* Main.storyboard */; };
 		19DFDA1D1EACE08600041BE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19DFDA1C1EACE08600041BE0 /* Assets.xcassets */; };
 		19DFDA2A1EACE13D00041BE0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19DFDA281EACE13D00041BE0 /* LaunchScreen.xib */; };
+		19DFDA2C1EACE1C200041BE0 /* Objectification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DFDA2B1EACE1C200041BE0 /* Objectification.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		19DFDA1C1EACE08600041BE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19DFDA211EACE08600041BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19DFDA291EACE13D00041BE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		19DFDA2B1EACE1C200041BE0 /* Objectification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Objectification.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				19DFDA071EACE06B00041BE0 /* Objectification.h */,
+				19DFDA2B1EACE1C200041BE0 /* Objectification.swift */,
 				19DFDA081EACE06B00041BE0 /* Info.plist */,
 			);
 			path = Objectification;
@@ -76,10 +79,10 @@
 		19DFDA141EACE08600041BE0 /* ObjectificationDemo */ = {
 			isa = PBXGroup;
 			children = (
-				19DFDA281EACE13D00041BE0 /* LaunchScreen.xib */,
 				19DFDA151EACE08600041BE0 /* AppDelegate.swift */,
 				19DFDA171EACE08600041BE0 /* ViewController.swift */,
 				19DFDA191EACE08600041BE0 /* Main.storyboard */,
+				19DFDA281EACE13D00041BE0 /* LaunchScreen.xib */,
 				19DFDA1C1EACE08600041BE0 /* Assets.xcassets */,
 				19DFDA211EACE08600041BE0 /* Info.plist */,
 			);
@@ -148,6 +151,7 @@
 					19DFDA031EACE06B00041BE0 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 4G7K3CN2JU;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					19DFDA121EACE08600041BE0 = {
@@ -201,6 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19DFDA2C1EACE1C200041BE0 /* Objectification.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +344,7 @@
 		19DFDA0D1EACE06B00041BE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4G7K3CN2JU;
@@ -351,6 +357,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.seungyounyi.Objectification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -358,6 +365,7 @@
 		19DFDA0E1EACE06B00041BE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4G7K3CN2JU;
