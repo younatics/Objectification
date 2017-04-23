@@ -14,7 +14,33 @@
 		19DFDA1D1EACE08600041BE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19DFDA1C1EACE08600041BE0 /* Assets.xcassets */; };
 		19DFDA2A1EACE13D00041BE0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 19DFDA281EACE13D00041BE0 /* LaunchScreen.xib */; };
 		19DFDA2C1EACE1C200041BE0 /* Objectification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DFDA2B1EACE1C200041BE0 /* Objectification.swift */; };
+		19DFDA2D1EACF0BA00041BE0 /* Objectification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DFDA041EACE06B00041BE0 /* Objectification.framework */; };
+		19DFDA2E1EACF0BA00041BE0 /* Objectification.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 19DFDA041EACE06B00041BE0 /* Objectification.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		19DFDA2F1EACF0BA00041BE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19DFD9FB1EACE06B00041BE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19DFDA031EACE06B00041BE0;
+			remoteInfo = Objectification;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		19DFDA311EACF0BA00041BE0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				19DFDA2E1EACF0BA00041BE0 /* Objectification.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		19DFDA041EACE06B00041BE0 /* Objectification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Objectification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19DFDA2D1EACF0BA00041BE0 /* Objectification.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,10 +155,12 @@
 				19DFDA0F1EACE08600041BE0 /* Sources */,
 				19DFDA101EACE08600041BE0 /* Frameworks */,
 				19DFDA111EACE08600041BE0 /* Resources */,
+				19DFDA311EACF0BA00041BE0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				19DFDA301EACF0BA00041BE0 /* PBXTargetDependency */,
 			);
 			name = ObjectificationDemo;
 			productName = ObjectificationDemo;
@@ -219,6 +248,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19DFDA301EACF0BA00041BE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 19DFDA031EACE06B00041BE0 /* Objectification */;
+			targetProxy = 19DFDA2F1EACF0BA00041BE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		19DFDA191EACE08600041BE0 /* Main.storyboard */ = {
@@ -385,6 +422,7 @@
 		19DFDA231EACE08600041BE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4G7K3CN2JU;
 				INFOPLIST_FILE = ObjectificationDemo/Info.plist;
@@ -398,6 +436,7 @@
 		19DFDA241EACE08600041BE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4G7K3CN2JU;
 				INFOPLIST_FILE = ObjectificationDemo/Info.plist;

@@ -16,6 +16,7 @@ class YNDropDownMenu {
     var version = "2.3.0"
     var url = "https://github.com/younatics/YNDropDownMenu"
 }
+
 class YNSearch {
     var title = "YNSearch"
     var starCount = 271
@@ -23,6 +24,7 @@ class YNSearch {
     var version = "0.3.1"
     var url = "https://github.com/younatics/YNSearch"
 }
+
 class YNExpandableCell {
     var title = "YNExpandableCell"
     var starCount = 191
@@ -35,12 +37,19 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let data1 = YNDropDownMenu()
+        let data2 = YNSearch()
+        let data3 = YNExpandableCell()
+        
+        let datas = [data1, data2, data3] as [Any]
+        
+        let objectification = Objectification(objects: datas, type: .all)
+        _ = objectification.objects(contain: "Awesome")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 
