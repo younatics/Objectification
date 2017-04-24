@@ -8,7 +8,8 @@
 [![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
 
 
-#### See [`Stringfication`](https://github.com/younatics/Stringfication) if you want to change objects to string
+#### See [Stringfication](https://github.com/younatics/Stringfication) if you want to change objects to string
+#### See [YNSearch](https://github.com/younatics/YNSearch) for usage
 
 ## Updates
 See [CHANGELOG](https://github.com/younatics/Objectification/blob/master/CHANGELOG.md) for details
