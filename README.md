@@ -61,6 +61,8 @@ print(objectification.objects(contain: "Awesome"))
 
 ## References
 #### Please tell me or make pull request if you use this library in your application :) 
+#### [YNSearch](https://github.com/younatics/YNSearch)
+#### [Stringfication](https://github.com/younatics/Stringfication)
 
 ## Author
 [younatics 🇰🇷](http://younatics.github.io)
