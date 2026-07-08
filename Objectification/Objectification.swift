@@ -53,7 +53,7 @@ public class Objectification {
     }
     
     private func properties(mirror: Mirror) -> [String] {
-        return mirror.children.flatMap { $0.label }
+        return mirror.children.compactMap { $0.label }
     }
     
     private func values(mirror: Mirror) -> [String] {
@@ -66,7 +66,7 @@ public class Objectification {
     }
     
     private func all(mirror: Mirror) -> [String] {
-        return mirror.children.flatMap { $0.label } + values(mirror: mirror)
+        return mirror.children.compactMap { $0.label } + values(mirror: mirror)
     }
     
     private func checkArray(object: Any) -> [String] {
@@ -87,10 +87,10 @@ public class Objectification {
     
     private func convertOptional(string: String) -> String {
         if string.hasPrefix("Optional(") && string.hasSuffix(")") {
-            let nonOptionalString = string.substring(10..<string.characters.count-2)
+            let nonOptionalString = string.substring(10..<string.count-2)
             
             if nonOptionalString.isInt || nonOptionalString.isDouble || nonOptionalString.isFloat {
-                return string.substring(9..<string.characters.count-1)
+                return string.substring(9..<string.count-1)
             } else {
                 return nonOptionalString
             }
@@ -115,6 +115,6 @@ private extension String {
     func substring(_ r: Range<Int>) -> String {
         let fromIndex = self.index(self.startIndex, offsetBy: r.lowerBound)
         let toIndex = self.index(self.startIndex, offsetBy: r.upperBound)
-        return self.substring(with: Range<String.Index>(uncheckedBounds: (lower: fromIndex, upper: toIndex)))
+        return String(self[fromIndex..<toIndex])
     }
 }

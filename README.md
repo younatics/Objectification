@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/younatics/Objectification/blob/master/LICENSE)
 [![Build Status](https://travis-ci.org/younatics/Objectification.svg?branch=master)](https://travis-ci.org/younatics/Objectification)
 [![Platform](https://img.shields.io/cocoapods/p/Objectification.svg?style=flat)](http://cocoapods.org/pods/Objectification)
-[![Swift 3.0](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
+[![Swift 6.0](https://img.shields.io/badge/Swift-6.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
 
 
 #### See [Stringfication](https://github.com/younatics/Stringfication) if you want to change objects to string
@@ -19,9 +19,25 @@ See [CHANGELOG](https://github.com/younatics/Objectification/blob/master/CHANGEL
 
 ## Requirements
 
-`Objectification` is written in Swift 3. Compatible with iOS 8.0+
+`Objectification` is written in Swift 6. Compatible with iOS 13.0+. Supports Swift Package Manager, CocoaPods, and Carthage.
 
 ## Installation
+
+### Swift Package Manager
+
+In Xcode, choose **File ▸ Add Package Dependencies…** and enter:
+
+```
+https://github.com/younatics/Objectification.git
+```
+
+Or add it to your `Package.swift`:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/younatics/Objectification.git", from: "2.0.0")
+]
+```
 
 ### Cocoapods
 
