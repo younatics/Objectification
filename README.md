@@ -1,11 +1,10 @@
 # Objectification
 
-[![Version](https://img.shields.io/cocoapods/v/Objectification.svg?style=flat)](http://cocoapods.org/pods/Objectification)
-[![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-brightgreen.svg?style=flat)](https://github.com/younatics/Objectification/blob/master/Package.swift)
+[![CocoaPods](https://img.shields.io/cocoapods/v/Objectification.svg?style=flat)](https://cocoapods.org/pods/Objectification)
+[![Platform](https://img.shields.io/badge/platform-iOS%2013%2B-lightgrey.svg?style=flat)](https://github.com/younatics/Objectification/blob/master/Package.swift)
+[![Swift 6](https://img.shields.io/badge/Swift-6.0-orange.svg?style=flat)](https://www.swift.org/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](https://github.com/younatics/Objectification/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/younatics/Objectification.svg?branch=master)](https://travis-ci.org/younatics/Objectification)
-[![Platform](https://img.shields.io/cocoapods/p/Objectification.svg?style=flat)](http://cocoapods.org/pods/Objectification)
-[![Swift 6.0](https://img.shields.io/badge/Swift-6.0-orange.svg?style=flat)](https://developer.apple.com/swift/)
 
 
 #### See [Stringfication](https://github.com/younatics/Stringfication) if you want to change objects to string
@@ -19,7 +18,7 @@ See [CHANGELOG](https://github.com/younatics/Objectification/blob/master/CHANGEL
 
 ## Requirements
 
-`Objectification` is written in Swift 6. Compatible with iOS 13.0+. Supports Swift Package Manager, CocoaPods, and Carthage.
+`Objectification` requires iOS 13.0+ and Swift 6. It supports Swift Package Manager and CocoaPods.
 
 ## Installation
 
@@ -39,17 +38,13 @@ dependencies: [
 ]
 ```
 
-### Cocoapods
+### CocoaPods
 
-Objectification is available through [CocoaPods](http://cocoapods.org). To install
+Objectification is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'Objectification'
-```
-### Carthage
-```
-github "younatics/Objectification"
+pod 'Objectification', '2.0.0'
 ```
 
 ## Usage
@@ -85,8 +80,6 @@ print(objectification.objects(contain: "Awesome"))
 
 ## License
 Objectification is available under the MIT license. See the LICENSE file for more info.
-
-
 
 
 
